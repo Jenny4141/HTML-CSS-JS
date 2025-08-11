@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 | Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <header>
+        <div class="container clearfix">
+            <div class="col-1">
+                <a href="./index.html"><img src="./images/logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="col-9">
+                <nav>
+                    <ul class="clearfix">
+                        <li class="col-3"><a href="./about.html">關於我們</a></li>
+                        <li class="col-3"><a href="./product.html">產品列表</a></li>
+                        <li class="col-3"><a href="./store.html">門市列表</a></li>
+                        <li class="col-3"><a href="./contact.html">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="icon col-2">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-line"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- 麵包屑 -->
+    <ol class="breadcrumb clearfix">
+        <li><a href="./index.html">首頁</a></li>
+        <li>聯絡我們</li>
+    </ol>
+    <div class="container clearfix">
+        <h2 class="col-12">聯絡我們</h2>
+        <div>
+            <form action="#" method="post">
+                <label for="username">姓名：</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">電子郵件：</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">聯絡電話：</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="gender">性別：</label>
+                <div class="gender">
+                    <label for="female"><input type="radio" id="female" name="gender" value="female" checked>
+                        女性</label>
+                    <label for="male"><input type="radio" id="male" name="gender" value="male">
+                        男性</label>
+                </div>
+
+                <label for="target">聯絡目的：</label>
+                <select name="target" id="target">
+                    <option value="complaint">客訴</option>
+                    <option value="join">加盟</option>
+                    <option value="cooperate">合作</option>
+                    <option value="purchase">企業採購</option>
+                    <option value="others">其他</option>
+                </select>
+
+                <label for="content">內容：</label>
+                <textarea name="conten" id="conten" rows="4"></textarea>
+
+                <button type="submit">提交</button>
+            </form>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.841682927684!2d121.54241626695787!3d25.032990192461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd375b308e5%3A0x8087e68db121b90!2zU1RBUkJVQ0tTIOaYn-W3tOWFiyAo6IiI5Y2X6ZaA5biCKQ!5e0!3m2!1szh-TW!2stw!4v1743613102648!5m2!1szh-TW!2stw"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+        <p>網站僅供練習，不做為商業用途。</p>
+        <p>&copy; 2025 Starbucks Coffee Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

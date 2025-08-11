@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-top: 99px;
+}
+
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 6px solid #006401;
+    padding: 12px;
+    background-color: #f6f6f6;
+}
+
+header img {
+    width: 55px;
+    height: 55px;
+    padding-top: 3px;
+}
+
+nav ul {
+    font-size: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #006401;
+    font-weight: bold;
+}
+
+.icon {
+    padding-top: 12px;
+    font-size: 30px;
+}
+
+.icon a {
+    color: rgba(34, 125, 81, 0.993);
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+
+.icon a:hover {
+    color: #006401;
+}
+
+/* ================================ */
+/*            麵包屑                 */
+/* =================================*/
+
+.breadcrumb {
+    margin: 0;
+    padding-left: 355px;
+    list-style: none;
+    border-bottom: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.breadcrumb>li {
+    float: left;
+}
+
+.breadcrumb a {
+    color: gray;
+}
+
+.breadcrumb>li+li::before {
+    content: '/';
+    padding: 0 10px;
+}
+/* ================================ */
+/*            側邊欄                 */
+/* =================================*/
+
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+aside a {
+    padding: 10px 0;
+    /* color: gray; */
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid lightgray;
+    transition: 0.2s ease;
+}
+
+aside a:hover {
+    color: #006401;
+    font-weight: bold;
+}
+
+.banner {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.clearfix::after {
+    content: "";
+    /* 空內容 */
+    display: table;
+    /* 讓 ::after 元素變成一個空的 table 元素 */
+    clear: both;
+    /* 清除浮動 */
+}
+
+.scale {
+    transition: 0.3s;
+}
+
+.scale:hover {
+    scale: 1.08;
+}
+
+.border {
+    box-shadow: 0 0 8px rgb(99, 97, 97);
+    border-radius: 10px;
+}
+
+.border img {
+    border-radius: 10px;
+}
+
+.about-img {
+    width: 975px;
+    padding-right: 12px;
+}
+
+.text-align {
+    text-align: left;
+    color: #414141;
+    font-size: 17px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absoulte {
+    position: absolute;
+}
+
+.tag-best {
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #006401;
+    color: #fff;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+}
+
+/* ================================ */
+/*             表格                 */
+/* =================================*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #006401;
+    color: #fff;
+}
+
+tr i {
+    color: #006401;
+}
+
+/* ================================ */
+/*             表單                 */
+/* =================================*/
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f6f6f6ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],input[type="time"],select,textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top:10px;
+    border: 1px solid #006401;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #006401;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #024603;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ================================ */
+/*           其他設定                */
+/* =================================*/
+
+.bg-primary {
+    background-color: #006401;
+    padding-bottom: 50px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.p-08 {
+    padding: 8px;
+}
+
+.p-1 {
+    padding: 20px;
+}
+
+footer {
+    background-color: #006401;
+    margin-top: 30px;
+}
+
+footer p{
+    text-align: center;
+    margin: 0;
+}
+
+/* ================================ */
+/*           col                    */
+/* =================================*/
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    float: left;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-1 {
+    width: 8.333333333%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33333333%;
+}
+
+.col-11 {
+    width: 91.66666667%;
+}
+
+.col-12 {
+    width: 100%;
+}

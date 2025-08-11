@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Cafe</title>
+    <link rel="icon shortcut" href="./img/coffee-shop.png">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <!-- TODO: 
+        取得Bootstrap原始碼並客製化客製化Bootstrap樣式: 
+        https://getbootstrap.com/docs/5.3/getting-started/download/
+    -->
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">K Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introSection">介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featuresSection">特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallerySection">產品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="text-center text-white bg-secondary">
+        <div class="container">
+            <h1>城市的靜謐角落，咖啡與靈感的交匯地</h1>
+            <p>結合藝術與美味，打造獨一無二的咖啡時光</p>
+        </div>
+        <div class="header-cover bg-primary"></div>
+    </header>
+    <!-- header end -->
+    <!-- introSection -->
+    <!-- 設定introSection 上下padding為等級5 -->
+    <section id="introSection" class="py-5 bg-light">
+        <div class="container">
+            <!-- alert -->
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <strong>👋 嗨！歡迎來到我們的網站，期待與您分享美好時光！</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <!-- alert end -->
+            <h1 class="section-title text-center text-secondary mb-5">介紹</h1>
+            <!-- TODO: 修正排版為三項排一排 -->
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fa-solid fa-mug-saucer fa-5x"></i>
+                        </div>
+                        <h3 class="text-secondary">新鮮現煮，香氣撲鼻</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>快速萃取每一份完美風味，只為您的滿足</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fa-solid fa-heart fa-5x"></i>
+                        </div>
+                        <h3 class="text-secondary">溫馨角落，放鬆時光</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>無論晴雨，這裡都是您的心靈休憩站</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fa-solid fa-award fa-5x"></i>
+                        </div>
+                        <h3 class="text-secondary">純粹風味，匠心打造</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>我們堅持每一口都帶來無與倫比的體驗</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: 設定此區塊距離上方為等級5的margin -->
+            <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
+            <div class="row mt-5">
+                <div class="text-center col-md-2 col-sm-4 col-6">
+                    <i class="fa-solid fa-tree fa-2x text-secondary"></i>
+                    <h5 class="mt-3 text-secondary">舒適角落</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-6">
+                    <i class="fa-solid fa-coffee fa-2x text-secondary"></i>
+                    <h5 class="mt-3 text-secondary">招牌特調</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-6">
+                    <i class="fa-solid fa-id-card fa-2x text-secondary"></i>
+                    <h5 class="mt-3 text-secondary">專業咖啡師</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-6">
+                    <i class="fa-solid fa-earth-americas fa-2x text-secondary"></i>
+                    <h5 class="mt-3 text-secondary">全球咖啡豆</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-6">
+                    <i class="fa-solid fa-rocket fa-2x text-secondary"></i>
+                    <h5 class="mt-3 text-secondary">靈感空間</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-6">
+                    <i class="fa-solid fa-plane fa-2x text-secondary"></i>
+                    <h5 class="mt-3 text-secondary">咖啡旅程</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- featuresSection -->
+    <section id="featuresSection" class="py-5">
+        <div class="container">
+            <h1 class="section-title mb-5 text-center">特色</h1>
+            <!-- TODO: 設定row內的區塊置中對齊 -->
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8 col-6">
+                    <!-- TODO: 為article1 article2 設置collapse互動方式 -->
+                    <div class="mb-3">
+                        <button data-bs-toggle="collapse" data-bs-target="#article1"
+                            class="btn btn-primary">專注每一杯</button>
+                        <button data-bs-toggle="collapse" data-bs-target="#article2"
+                            class="btn btn-primary">放慢腳步</button>
+                    </div>
+                    <article id="article1" class="my-3 collapse show">
+                        <div class="card card-body mb-3">
+                            <h3>專注每一杯</h3>
+                            <p>我們堅持嚴選來自世界各地的精品咖啡豆，經過細緻的手工烘焙與精確的萃取，讓每一杯咖啡都展現出其獨特的風味與香氣。無論您喜歡濃郁的濃縮咖啡還是順口的拿鐵，我們的咖啡師都會以專業技藝，確保每一口都能讓您品味到咖啡的純粹與美好。
+                            </p>
+                        </div>
+                    </article>
+                    <article id="article2" class="my-3 collapse">
+                        <div class="card card-body mb-3">
+                            <h3>放慢腳步</h3>
+                            <p>我們的咖啡廳不僅提供優質咖啡，更致力於打造一個舒適放鬆的空間。從溫暖的燈光設計到舒適的座椅布局，再配上悠揚的音樂與淡雅的香氣，營造出一處讓人身心放鬆的避風港。無論您是想要獨自享受靜謐時光，還是與朋友分享美好瞬間，這裡都是您最佳的選擇。
+                            </p>
+                        </div>
+                    </article>
+                    <!-- 導覽按鈕 -->
+                    <nav class="nav nav-pills">
+                        <button class="nav-link active btn btn-primary" data-bs-toggle="tab" data-bs-target="#article3">
+                            驚艷味蕾
+                        </button>
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#article4">
+                            甜點時光
+                        </button>
+                    </nav>
+                    <!-- TODO: 為article3 article4 設置tab互動方式 -->
+                    <div class="tab-content">
+                        <article id="article3" class="tab-pane my-3 show active">
+                            <div class="card card-body my-3">
+                                <h3>驚艷味蕾</h3>
+                                <p>我們的創意特調飲品是咖啡與靈感的完美結合，為您帶來與眾不同的味覺體驗。無論是季節限定的清新水果風味，還是結合本地特色的獨創調飲，每一款都精心設計，力求讓每位顧客都能感受到咖啡與創意的無限可能。來一杯特調飲品，為您的咖啡時光增添驚喜！
+                                </p>
+                            </div>
+                        </article>
+                        <article id="article4" class="tab-pane my-3">
+                            <div class="card card-body my-3">
+                                <h3>甜點時光</h3>
+                                <p>甜點是我們咖啡廳的另一項驕傲，每日由專業的甜點師新鮮手作，選用優質的食材，細膩雕琢每一個細節。從經典的芝士蛋糕到創意滿分的季節限定甜品，無論您喜歡濃郁或清爽口感，我們都能滿足您的期待。搭配咖啡的濃香，每一口都讓人感受到滿滿的幸福。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end -->
+
+    <!-- TODO: 設計一組輪播元件 -->
+    <!-- 圖片輪播 -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/h-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/h-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/h-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/h-4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/h-5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- 圖片輪播 end -->
+
+    <!-- modalSection -->
+    <section id="modalSection" class="bg-secondary py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center my-5">
+                <div class="col-md-3">
+                    <h4 class="text-white mb-4">新版本即將釋出！</h4>
+                    <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                    <button data-bs-toggle="modal" data-bs-target="#detailModal" class="btn btn-primary">查看詳情</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 彈出視窗 -->
+    <div class="modal fade" id="detailModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">版本更新詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+                </div>
+                <div class="modal-body">
+                    <p>感謝您使用我們的服務！新版本將帶來以下更新：</p>
+                    <ul>
+                        <li>提升系統性能與穩定性。</li>
+                        <li>新增更多功能選項，滿足不同需求。</li>
+                        <li>優化用戶體驗，讓操作更流暢。</li>
+                    </ul>
+                    <p>敬請期待！</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">了解更多</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 彈出視窗 end-->
+    <!-- modalSection end -->
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">美式咖啡</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">拿鐵</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">茶</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">果茶</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">蛋糕</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">節慶蛋糕</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">麵包</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">輕食</div>
+                    <div class="gallery-cover bg-primary"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    <!-- footer -->
+    <footer id="footer" class="pt-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h4>聯絡我們</h4>
+                    <ul>
+                        <li>
+                            <a href="#">電話</a>
+                        </li>
+                        <li>
+                            <a href="#">地址</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h4 class="text-uppercase">菜單</h4>
+                    <ul>
+                        <li>
+                            <a href="#">咖啡</a>
+                        </li>
+                        <li>
+                            <a href="#">茶類</a>
+                        </li>
+                        <li>
+                            <a href="#">美食</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark mt-5 py-2">
+            <p class="text-center">&copy; Copy right <span id="yearShow"></span></p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- side-box -->
+    <div class="side-box">
+        <div class="left-part">
+            <button class="ad-toggle-btn">
+                <i class="fas fa-sort"></i>
+            </button>
+        </div>
+        <div class="right-part">
+            <img class="w-100" src="./img/cafe.jpg">
+            <p>歡迎來到<strong>K Cafe</strong>，這裡結合精品咖啡、手作甜點與溫馨氛圍。我們用心調製每一杯咖啡，搭配舒適空間，讓您在忙碌生活中找到一份靜謐與美好，享受片刻的悠閒時光！</p>
+        </div>
+    </div>
+    </div>
+    <!-- side-box end -->
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap.bundle.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

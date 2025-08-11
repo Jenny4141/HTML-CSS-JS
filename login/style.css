@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.logo-btn {
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+}
+
+.logo-btn:hover {
+    color: #000;
+    background: #A9A9A9;
+}
+
+.navbar a:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.navbar a::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.login {
+    transform: translate(-50%, -50%) translateX(-100%);
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.user {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.user input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background: transparent;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+
+.user input:focus {
+    transform: scale(1.1);
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+
+.reme {
+    margin-top: 30px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reme label {
+    margin-right: 10px;
+}
+
+.reme input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.reme p {
+    padding-right: 25px;
+    margin-right: -20px;
+}
+
+.reme a {
+    text-decoration: none;
+    color: #000;
+}
+
+.reme a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    border: 2px solid gray;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(58, 55, 55);
+    outline: none;
+    background: #A9A9A9;
+}
+
+.login-btn:hover {
+    background: gray;
+    color: #fff;
+}
+
+.register {
+    margin-top: 25px;
+    font-size: 18px;
+    
+}
+
+.register a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.register-form {
+    transform: translate(-50%, -50%) translateX(100%);
+}
+
+.reme label {
+    margin-right: 10px;
+}
+
+.reme input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.register-login {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.register-login a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.register-login a:hover {
+    text-decoration: underline;
+}
+
+.login,
+.register-form {
+    width: 500px;
+    min-height: 600px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden; /* 預設不可見 */
+    pointer-events: none; /* 預設不能點擊 */
+    transition: transform 0.4s ease, opacity 0.5s ease;
+}
+
+.login.active,
+.register-form.active {
+    visibility: visible; /* 顯示時才可見 */
+    pointer-events: auto; /* 顯示時才可點 */
+    opacity: 1;
+}
